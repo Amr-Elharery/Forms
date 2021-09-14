@@ -1,0 +1,78 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial , tahoma sans-serif;
+  background: #0075ff; }
+  body form {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 25px; }
+    body form h1 {
+      text-transform: capitalize;
+      text-align: center;
+      color: #555;
+      font-weight: normal; }
+    body form input:not(input[type='submit']) {
+      outline: none;
+      border: none;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      position: relative;
+      caret-color: #ccc;
+      color: #777; }
+      body form input:not(input[type='submit'])::placeholder {
+        opacity: .8;
+        transform: translateX(1px);
+        font-size: 15px; }
+    body form label i {
+      color: #ccc;
+      position: relative;
+      top: 27px;
+      z-index: 2;
+      right: 4px; }
+    body form input.submit {
+      border: none;
+      padding: 10px 30px;
+      color: #FFF;
+      background: #0075ff;
+      font-weight: 700;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px; }
+    body form p {
+      text-align: center;
+      text-transform: capitalize; }
+      body form p span {
+        color: #0075ff;
+        margin-left: 5px;
+        cursor: pointer; }
+    body form span.border-top {
+      color: #ccc;
+      border-top: 2px dashed #CCC;
+      margin: 15px 0; }
+    body form h3 {
+      text-align: center;
+      color: #555; }
+    body form .icons {
+      display: flex;
+      justify-content: center; }
+      body form .icons i {
+        margin-left: 10px;
+        font-size: 25px;
+        cursor: pointer; }
+      body form .icons i:nth-child(1) {
+        color: #00F; }
+      body form .icons i:nth-child(2) {
+        color: #2196f3; }
+      body form .icons i:nth-child(3) {
+        color: #F00; }
+
+/*# sourceMappingURL=challenge1.css.map */

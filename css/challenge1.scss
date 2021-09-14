@@ -1,0 +1,96 @@
+@mixin br ($r) {
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+$mainColor:#0075ff;
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: arial , tahoma sans-serif;
+  background: $mainColor;
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background: #FFF;
+    @include br(3px);
+    padding: 25px;
+    h1{
+      text-transform: capitalize;
+      text-align: center;
+      color: #555;
+      font-weight: normal;
+    }
+    input:not(input[type='submit']){
+      outline: none;
+      border: none;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      position: relative;
+      caret-color: #ccc;
+      color: #777;
+      &::placeholder{
+        opacity: .8;
+        transform: translateX(1px);
+        font-size: 15px;
+      }
+    }
+    label{
+      i{
+        color: #ccc;
+        position: relative;
+        top: 27px;
+        z-index: 2;
+        right: 4px;
+      }
+    }
+    input.submit{
+      border: none;
+      padding: 10px 30px;
+      color:#FFF;
+      background: $mainColor;
+      font-weight: 700;
+      @include br(3px);
+    }
+    p{
+      text-align: center;
+      text-transform: capitalize;
+      span{
+        color:$mainColor;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+    span.border-top{
+      color:#ccc;
+      border-top:2px dashed #CCC ;
+      margin: 15px 0;
+    }
+    h3{
+      text-align: center;
+      color:#555;
+    }
+    .icons{
+      display: flex;
+      justify-content: center;
+      i{
+        margin-left: 10px;
+        font-size: 25px;
+        cursor:pointer;
+      }
+      i:nth-child(1){
+        color: #00F;
+      }
+      i:nth-child(2){
+        color: #2196f3;
+      }
+      i:nth-child(3) {
+        color:#F00;
+      }
+    }
+  }
+}
